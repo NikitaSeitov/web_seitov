@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta
+      name="description"
+      content="Портфолио Никиты Сеитова — художника, исследующего взаимодействие человека и реального мира."
+    >
+    <title>Никита Сеитов — художник</title>
+    <link rel="stylesheet" href="styles.css?v=93">
+  </head>
+  <body>
+    <main id="site" class="site" data-page="home">
+      <a class="home-art" href="#home" aria-label="На главную">
+        <span class="home-hint" role="tooltip">рандом проект</span>
+        <video
+          class="home-video"
+          src="assets/home-video.mp4?v=12"
+          autoplay
+          muted
+          playsinline
+          preload="auto"
+          aria-label="Видео-коллаж из работ Никиты Сеитова"
+        ></video>
+        <video
+          class="home-video"
+          src="assets/home-video.mp4?v=12"
+          muted
+          playsinline
+          preload="auto"
+          aria-hidden="true"
+          tabindex="-1"
+        ></video>
+      </a>
+
+      <section class="about-page" aria-label="О художнике">
+        <img
+          class="portrait"
+          src="assets/about-portrait-hq-v2.png?v=1"
+          alt="Портрет Никиты Сеитова с рисунком фантастического существа"
+        >
+        <div class="about-copy">
+          <div class="bio">
+            <p data-copy="intro"></p>
+            <p data-copy="practice"></p>
+            <p data-copy="education"></p>
+          </div>
+          <div class="statement">
+            <p class="statement-title" data-copy="statementTitle"></p>
+            <p data-copy="statementIntro"></p>
+            <p data-copy="statementBody"></p>
+          </div>
+          <p class="about-contact">
+            <a href="mailto:nikitaseitov@gmail.com">nikitaseitov@gmail.com</a>
+            <a
+              href="https://t.me/eachuisg4"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Telegram"
+            >tg</a>
+            <a
+              href="https://www.instagram.com/eachuisg4?psln=MXZpcms0Mjcxa2cxNQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >inst</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="projects-page" aria-label="Проекты и портфолио">
+        <div class="project-grid">
+          <a class="project-link" href="?project=decluttering#project" aria-label="decluttering">
+            <img class="project-installation" src="assets/projects-installation-hq.png" alt="Инсталляция с одеждой, объектами и экранами">
+          </a>
+          <a class="project-link" href="?project=panc-1#project" aria-label="PANC-1">
+            <img class="project-sealed project-cutout" src="assets/projects-sealed-object-hq.png" alt="Объект в герметичной упаковке">
+          </a>
+          <a class="project-link" href="?project=asmr-kuking#project" aria-label="ASMR KUKING">
+            <img class="project-mechanism" src="assets/projects-mechanism-hq.png" alt="Механизм с жёлтым элементом и чёрной деталью">
+          </a>
+          <a class="project-link" href="?project=foole#project" aria-label="foole">
+            <img class="project-hat project-cutout" src="assets/projects-jester-hat-hq.png" alt="Тканевый колпак с бубенцами">
+          </a>
+          <a class="project-link" href="?project=haunted#project" aria-label="HAUNTED">
+            <img class="project-reliquary project-cutout" src="assets/projects-reliquary-hq.png" alt="Объект в форме готической витрины">
+          </a>
+          <a class="project-link" href="?project=paralysis-of-choice#project" aria-label="Паралич выбора">
+            <img class="project-sculpture" src="assets/projects-sculpture-hq.png" alt="Белая скульптура на чёрном постаменте">
+          </a>
+          <a class="project-link" href="?project=loop#project" aria-label="Петля">
+            <img class="project-projection" src="assets/projects-projection-hq.png" alt="Видеопроекция в затемнённом выставочном зале">
+          </a>
+        </div>
+      </section>
+
+      <section class="project-detail" aria-labelledby="project-detail-title">
+        <div class="project-detail-layout">
+          <div class="project-detail-copy">
+            <p class="project-detail-meta" data-detail-meta></p>
+            <h1 id="project-detail-title" data-detail-title></h1>
+            <div class="project-detail-description" data-detail-description></div>
+          </div>
+          <div class="project-detail-gallery" data-detail-gallery></div>
+        </div>
+      </section>
+
+      <nav class="navigation" aria-label="Основная навигация">
+        <a class="nav-projects" href="#projects">
+          <span data-copy="projects"></span>
+        </a>
+        <a
+          class="nav-portfolio"
+          href="assets/documents/никита_сеитов_cv.pdf?v=2"
+          target="_blank"
+          rel="noopener"
+        >
+          <span data-copy="portfolio"></span>
+        </a>
+        <a class="nav-about" href="#about">
+          <span data-copy="about"></span>
+          <span class="nav-subtitle">(<span data-copy="artist"></span>)</span>
+        </a>
+        <a class="nav-home" href="#home" aria-label="На главную" title="На главную">
+          <svg
+            viewBox="0 0 32 32"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M8 4v8a8 8 0 0 0 16 0V4h-4v8a4 4 0 0 1-8 0V4H8Z"
+              fill="currentColor"
+            />
+            <path d="M8 4H4v5h4M24 4h4v5h-4" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </a>
+        <button class="language-toggle" type="button" aria-label="Switch language">
+          <span>eng/rus</span>
+        </button>
+      </nav>
+    </main>
+    <img class="idle-cursor-visual" alt="" aria-hidden="true" hidden>
+    <script src="script.js?v=73"></script>
+  </body>
+</html>
